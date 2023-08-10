@@ -1,0 +1,71 @@
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 20px;
+  background-image: radial-gradient(farthest-side at 60% 55%, #e2e2ec, #a9b8a9, #95958c, #333030);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+
+  .image-price-rating-container {
+    display: flex;
+    align-items: center;
+  
+    .title-container {
+      padding: 10px 20px;
+      font-size: 25px;
+      font-weight: 200;
+      color: antiquewhite;
+    }
+    .price-container {
+      margin-bottom: 60px;
+      padding: 5px 20px;
+      color: aliceblue;
+    }
+    img {
+      width: 200px;
+      margin-right: 60px;
+      border-radius: 5%;
+
+    }
+  }
+
+  .title-rating-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .desc-actions {
+    width: 30%;
+    .description-container {
+      margin-bottom: 15px;
+    }
+    .action-container {
+      display: flex;
+      margin-top: 15px;
+      position: absolute;
+      bottom: 15px;
+      right: 5px;
+      .action-icon {
+        img {
+          width: 25px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+input,
+textarea {
+  font-size: 15px;
+  padding: 5px;
+  font-family: "Amazon Ember", sans-serif;
+}
